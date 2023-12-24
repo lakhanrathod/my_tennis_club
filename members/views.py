@@ -29,3 +29,6 @@ def testing(request):
     'mymembers': mymembers,
   }
   return HttpResponse(template.render(context, request))
+
+def myView(request):
+  return HttpResponse("from my view")
